@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------- shared css ------------ */
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+.google_sans_form {
+  font-family: "Google Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* ----------- sign up page head + body ----------- */
+.center {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/picture/amader.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main_form {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid rgb(218, 214, 214);
+  padding: 25px 30px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 2px 2px 12px rgba(40, 33, 33, 0.595);
+  border-radius: 0.8rem;
+  /* background-color: rgb(89, 86, 86); */
+}
+.main_form:hover {
+  box-shadow: 1px 3px 15px rgb(188, 188, 180);
+  /* border: 1px solid; */
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+.main_form h2 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  color: rgb(49, 53, 55);
+  border-bottom: 5px double;
+  margin-bottom: 20px;
+}
+.form_section {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(58, 52, 52);
+  font-weight: 600;
+}
+/* input filed  */
+.common {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 9px;
+}
+.common:focus {
+  outline: 2px solid #f7f5f4;
+  outline-offset: 3px;
+}
+input::placeholder {
+  font-size: 0.9rem;
+}
+input {
+  font-size: 1rem;
+}
+/* condition and terms */
+.agree {
+  font-size: 0.8rem;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+.agree a {
+  color: black;
+}
+.btn {
+  padding: 12px 35px;
+  border: none;
+  background-color: rgb(240, 240, 239);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  outline: 2px solid rgb(21, 12, 12);
+  outline-offset: 1px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  outline: 1px solid white;
+  background-color: rgb(51, 49, 49);
+  color: white;
+}
+/* footer section  */
+.foot_login_link {
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+}
+.foot_login_link a {
+  color: black;
+}
+.foot_login_link a:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 576px) {
+  .main_form {
+    margin: 0 25px 0 25px;
+  }
+  .form_section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  .agree {
+    display: flex;
+    flex-direction: column;
+  }
+  .foot_login_link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
